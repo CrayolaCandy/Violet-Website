@@ -1,0 +1,140 @@
+body {
+  background-color: hsl(271, 76%, 53%);
+}
+.header{
+  color: white;
+  position: fixed;
+  background-color:rgb(100, 61, 168);
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  z-index: 5;
+}
+.sections{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.left-section{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex:1;
+  align-items: center;
+  margin-left: 60px;
+}
+.right-section{
+  display: flex;
+  flex:1;
+  align-items: center;
+  right: 0;
+  justify-content: center;
+  margin-left: 30px;
+  column-gap: 10px;
+}
+.account-picture{
+  width:50px;
+  border-radius: 100%;
+}
+.home, .player, .creator, .chatTitle{
+  justify-items: center;
+  text-decoration: none;
+  color: white;
+}
+.player, .home{
+  border: none;
+  background-color: rgb(100, 61, 168);;
+}
+.logout{
+  margin-right: 10px;
+}
+
+.Logo{
+  width: 300px;
+}
+.link-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.discord-link, .minecraft-link {
+  display: flex;
+  align-items: center; /* Ensures text and image are vertically aligned */
+  gap: 10px; /* Adds space between the image and text */
+  margin-bottom: 20px; /* Adds space between the rows */
+}
+
+.discord, .minecraft {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(100, 61, 168);
+}
+
+.link {
+  background-color: rgb(100, 61, 168);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  margin: 0; /* Removes default margin from the paragraph */
+}
+a {
+  text-decoration: none;
+}
+
+.loginButton, .signupButton, .userList{
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+.profileLink{
+  text-decoration: none;
+  color: white;
+}
+.loginForm, .signupForm, .formList{
+  padding: 5px 8px;
+  display: flex;
+  position: absolute;
+  background-color: rgb(100, 61, 168);
+  color: black;
+  flex-direction: column;
+  cursor: default;
+  border-radius: 5%;
+  border:solid;
+  border-width: 1px;
+  display: none;
+}
+.loginClicked, .signupClicked, .formClicked{
+  display: block;
+}
+.usernameLogin, .passwordLogin, .usernameSignup, .passwordSignup{
+  margin-bottom: 5px;
+}
+.login_button, .signup_button{
+  background-color: hsl(271, 76%, 53%);
+  color: white;
+  border-radius: 100px;
+  border: none;
+  margin-top: 10px;
+  
+}
+.logout_button, .orderLink{
+  background-color: rgb(100, 61, 168);
+  color: white;
+  padding: 3px 15px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.logout_button:hover, .orderLink:hover{
+  background-color: hsl(271, 69%, 63%);
+}
+.headerImage{
+  width: 50px;
+  border-radius: 50%;
+}

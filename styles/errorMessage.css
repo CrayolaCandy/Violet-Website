@@ -1,0 +1,29 @@
+.errorBox{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 43%;
+  right: 43%;
+  z-index: 10;
+  color: white;
+}
+.errorMessage{
+  position: fixed;
+  text-align: center;
+}
+.errorBox2{
+  background-color: blueviolet;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  border-radius: 8px;
+}
+.fade-message{
+  background-color: blueviolet;
+  padding: 20px 35px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.fade-message.hide {
+  opacity: 0;
+}

@@ -1,0 +1,57 @@
+.signupBox{
+  margin-top: 150px;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(100, 61, 168);
+  padding-bottom: 20px;
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin: 150px auto 0 auto;
+}
+.imageHeader{
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.inputSignupInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.signupInput{
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.signupSection{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  position: static;
+}
+.SignupButton{
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: hsl(271, 76%, 53%);
+  color: white;
+}
+.loginReminder{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.loginLink{
+
+  color: white;
+  margin-left: 5px;
+}
+@media (max-width: 500px) {
+  .loginBox {
+    width: 90%;
+  }
+}
+
