@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+  <div class="profileList">
+    <div class="profileChoice">
+      <div class="options">
+        <div class="bedwarStatus">
+          <span class="profileOption">BedwarStat</span>
+        </div>
+        <div class="orderOption">
+          <span class="profileOption">Orders</span>
+        </div>
+        <div class="conversationAttended">
+          <span class="profileOption">Conversation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="choiceResult">
+      <div class="resultInner choiceChosen">
+        <ul class="orderList">
+          <li class = "listingOrder">
+            <!--One Order-->
+            <div class="orderBox" id = "1">
+              <div class="type">
+                <span><span></span></span>
+              </div>
+              <div class="orderContent">
+                <div class="orderInfo">
+                  <div>
+                    <span><span></span></span><br>
+                    <span><span></span></span>
+                  </div>
+                  <div>
+                    <span>Kill: <span>1-10</span></span><br>
+                    <span>WinStreak: <span>1-10</span></span>
+                  </div>
+                </div>
+                <button class="deleteButton" onclick = "deleteOrder(1)">Delete</button>
+              </div>
+            </div>
+            <div class="orderBox" id = "2">
+              <div class="type">
+                <span>Mode: <span>Quad</span></span>
+              </div>
+              <div class="orderContent">
+                <div class="orderInfo">
+                  <div>
+                    <span>FinalKill: <span>1-10</span></span><br>
+                    <span>BedDestroy: <span>1-10</span></span>
+                  </div>
+                  <div>
+                    <span>Kill: <span>1-10</span></span><br>
+                    <span>WinStreak: <span>1-10</span></span>
+                  </div>
+                </div>
+                <button class="deleteButton" onclick = "deleteOrder(2)">Delete</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src = "script/deleteOrder.js"></script>
+</body>
+</html>

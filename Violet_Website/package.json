@@ -1,0 +1,21 @@
+{
+  "name": "violet-website",
+  "version": "1.0.0",
+  "main": "mainExpress.cjs",
+  "type": "module",
+  "scripts": {
+    "devStart": "nodemon backend/mainExpress.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.1",
+    "multer": "^2.0.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10"
+  }
+}

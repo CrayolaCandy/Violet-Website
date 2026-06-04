@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Upload on Image Click</title>
+  <style>
+    #uploadImage {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #333;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden file input -->
+  <input type="file" id="imageInput" accept="image/*" style="display: none;">
+
+  <!-- The image used as button -->
+  <img src="/images/CrayolaCandyProfileImage.jpg" id="uploadImage" alt="Click to upload">
+
+  <script>
+    // When clicking the image, trigger the file input click
+    document.getElementById("uploadImage").addEventListener("click", function() {
+      document.getElementById("imageInput").click();
+    });
+
+    // When file selected, update image preview
+    document.getElementById("imageInput").addEventListener("change", function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById("uploadImage").src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+        console.log(file.result)
+      }
+    });
+  </script>
+
+</body>
+</html>

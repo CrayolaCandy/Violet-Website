@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikaNetwork BedWars Stats</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Axios via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Get Player BedWars Stats</h1>
+    <div class="product-container">
+      <div class="product-image-container">
+        <img class="product-image"
+          src = "">
+      </div>
+
+      <div class="product-name limit-text-to-2-lines">
+        ${product.name}
+      </div>
+    <img src = "">
+    
+    <input id="playerIGN" placeholder="Enter Player Name" class="playerIGN">
+
+    <select id = "interval" name = "interval">
+      <option value = "weekly">Weekly</option>
+      <option value = "monthly">Monthly</option>
+      <option value = "yearly">Yearly</option>
+      <option value = "lifetime">Lifetime</option>
+    </select>
+    <select id = "mode" name = "mode">
+      <option value = "solo">Solo</option>
+      <option value = "Doubles">Duo</option>
+      <option value = "Triple">Trio</option>
+      <option value = "Quad">Quad</option>
+      <option value = "all_modes">All</option>
+    </select>
+
+    <button id="searchBtn">Search</button>
+
+    <!-- Display Results -->
+    <div id="statsResult"></div>
+    <script type="module" src = "index.js"></script>
+</body>
+</html>

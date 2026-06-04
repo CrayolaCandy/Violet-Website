@@ -1,0 +1,13 @@
+const express = require("express")
+const path = require("path")
+const router = express.Router()
+
+router.get('/chat/:chatID', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', '..', 'pages', 'chatMessage.html'));
+})
+
+router.get('/home', (req, res) => {
+  res.redirect('/home.html')
+})
+
+module.exports = router

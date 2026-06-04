@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Async/Await and Promise Demo</title>
+</head>
+<body>
+  <h1>Check your browser console for output</h1>
+
+  <script>
+    // A function that returns a Promise that resolves after 2 seconds
+    function waitTwoSeconds() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve("Done waiting!");
+        }, 2000);
+      });
+    }
+
+    // An async function that uses await to wait for the promise
+    async function demoAsyncAwait() {
+      console.log("Start waiting...");
+
+      // Wait for the Promise to resolve
+      const message = await waitTwoSeconds();
+
+      // After 2 seconds, this line will run
+      console.log(message);
+
+      console.log("Finished!");
+    }
+
+    // Run the async function
+    demoAsyncAwait();
+  </script>
+</body>
+</html>

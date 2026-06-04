@@ -1,0 +1,137 @@
+.chatForm{
+
+  border: solid 1px black;
+}
+.messageForm{
+  border: solid 1px gold;
+  display: flex;
+  justify-content: center;
+}
+.userSide{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 20px;
+  border: solid 1px palegreen;
+  height: 180px;
+}
+.userSide img{
+  margin-bottom: 10px;
+}
+.userName{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: solid 1px navy;
+}
+.messageSide{
+  border: solid 1px tomato;
+}
+.messageBox{
+  width: 1300px;
+  min-height: 300px;
+  height: auto;
+  border: solid 1px olive;
+  padding: 10px;
+  outline: none;
+}
+.messageBox img, .inputImage img{
+  height: 80px;
+}
+.editBox{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.editButton, .deleteButton{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.replyButton{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.userSection{
+  border: solid 1px bisque;
+  display: flex;
+  justify-content: center;
+}
+.inputSection{
+  border: solid 1px brown;
+  width: 1300px;
+  padding: 10px;
+}
+.inputMessage{
+  border: solid 1px violet;
+  width: 100%;
+  height: 180px;
+  box-sizing: border-box;
+}
+.inputImage{
+  display: flex;
+}
+.inputImage img {
+
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+
+/* Fake X using ::after */
+
+
+/* Optional: Show X only on hover */
+.inputImage::after {
+  opacity: 1;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+.inputImage:hover::after {
+  opacity: 1;
+}
+
+
+
+
+.insertedImage {
+  position: relative;
+  
+  height: 80px;
+
+  overflow: hidden; /* this clips anything outside the round shape */
+}
+
+.insertedImage img {
+  object-fit: cover;
+  display: block;
+}
+
+.removeMarkBox {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: transparent; /* semi-transparent red */
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.removeMarkBox img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  border: none;
+  cursor: pointer;
+}
+.inputBottom{
+  display: flex;
+  justify-content: space-between;
+}

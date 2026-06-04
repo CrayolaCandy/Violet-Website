@@ -1,0 +1,10 @@
+body{
+  background-color: hsl(271, 76%, 53%);
+  height: 10000px;
+}
+.VioletLogo{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+}

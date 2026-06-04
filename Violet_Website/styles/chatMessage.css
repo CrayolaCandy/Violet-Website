@@ -1,0 +1,97 @@
+.messageChat{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  
+}
+.messageForm {
+  background-color: rgb(100, 61, 168);
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 1500px; /* or any fixed width */
+  
+}
+
+.messageBox{
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.userBox{
+  align-content: center;
+  border-width: 1px;
+  border-style: solid;
+  height: 200px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.userImage{
+  width: 150px;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+.usernameBox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  border-width: 1px;
+  border-style: solid;
+  
+}
+.username{
+  color: white;
+}
+.message{
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 2000px;
+  color: white;
+  height: 300px;
+  margin-top: 5px;
+  margin-right: 0;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.userInsertBox {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 10px; /* space between input and button */
+  
+}
+
+.userInput {
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: none;
+  font-size: 20px;
+}
+
+.sendButton {
+  align-self: flex-end; /* move button to right */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+
+.messageForm { border: 1px solid red; }
+.userInsertBox { border: 1px solid orange; }
+.userInput { border: 1px solid yellow; }

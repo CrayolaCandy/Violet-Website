@@ -1,0 +1,188 @@
+.titleBox{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  margin: 0;
+  width: 1250px;
+}
+.chat{
+  box-sizing: border-box;
+  width: 100%;
+  color: rgb(67, 33, 126);
+  background-color: blueviolet;
+  font-size: 50px;
+}
+textarea{
+  height: auto;
+  overflow-y: hidden;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+.messageForm{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerForm{
+  background-color: rgb(100, 61, 168);
+  width: 1500px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+.messageList{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin:10px;
+}
+.userInfo{
+  background-color: blueviolet;
+  border-radius: 10px;
+  height: 200px;
+}
+.userboxImage{
+  display: flex;
+  justify-content: center;
+  
+}
+.userImage{
+  padding: 10px;
+  width: 150px;
+  border-radius: 50%;
+}
+.userboxName{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.userName{
+  color: white;
+}
+
+
+
+.sentMessage{
+  width: 1300px;
+  height: 400px;
+}
+/*
+.displayMessage{
+  box-sizing: border-box;
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  padding: 10px;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+  */
+.messageSection{
+  min-height: 90%;
+  height: auto;
+  background-color: blueviolet;
+  border-radius: 10px;
+  outline: none;
+}
+.displayMessage:focus {
+  outline: none;
+}
+
+.message, .image{
+  width: 100%;
+  min-height: auto;
+  padding: 10px;
+  
+  white-space: pre-wrap;  /* important for wrapping & respecting line breaks */
+  word-wrap: break-word;  /* break long words if needed */
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+.message{
+  min-height: 60%;
+  height: auto;
+  font-size: 20px;
+  color: white;
+}
+.image{
+  height: 40%;
+}
+
+.editChat{
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.leftSide{
+  display: flex;
+  gap: 20px;
+  margin-left: 10px;
+}
+.rightSide{
+  margin-right: 10px;
+}
+.editButton, .deleteButton, .replyButton{
+  cursor: pointer;
+}
+
+.loginNotice{
+  border: 1px solid blueviolet;
+  color: white;
+  width: 1500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userSection{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 50px;
+}
+.inputBox{
+  width: 1300px;
+  height: 200px;
+  
+}
+.userInput{
+  background-color: blueviolet;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+.submitBox{
+  display: flex;
+  justify-content: flex-end;
+}
+.submitButton{
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+ul {
+  list-style-type: none;
+}
+
+/*
+.titleBox{border: solid 1px red;}
+.title{border: solid 1px yellow;}
+.chat{border: solid 1px orange;}
+*/

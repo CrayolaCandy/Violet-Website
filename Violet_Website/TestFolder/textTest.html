@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="textTest.css">
+  <title>Document</title>
+</head>
+<body>
+  <div contenteditable="true" class = "testDiv">t</div>
+
+<div class = "messageSection">
+  <div contenteditable = "true" class = "textSection">
+
+  </div>
+  <div class = "imageSection">
+
+  </div>
+</div>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    .inputBox {
+      width: 1300px;
+    }
+
+    .inputWrapper {
+      overflow: hidden;
+      transition: height 0.3s ease;
+      border-radius: 10px;
+      background-color: blueviolet;
+    }
+    .inputWrapper.collapsed .userInput {
+      overflow: hidden;       /* no scrollbars */
+      /*pointer-events: none;*/   /* prevents typing/clicking inside */
+    }
+
+    .inputWrapper.expanded .userInput {
+      overflow-y: auto;       /* allow scroll when expanded */
+      pointer-events: auto;   /* re-enable typing/clicking */
+    }
+
+    .inputWrapper.collapsed {
+      height: 200px;
+    }
+
+    .inputWrapper.expanded {
+      min-height: 500px;
+      height: auto;
+    }
+
+    .userInput {
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      color: white;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+       overflow: hidden;
+    }
+
+    .toggleButton {
+      margin-top: 10px;
+      padding: 6px 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: blueviolet;
+      color: white;
+      cursor: pointer;
+    }
+
+    .submitButton {
+      margin-top: 10px;
+      padding: 6px 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: rgb(120, 80, 200);
+      color: white;
+      cursor: pointer;
+    }
+    .userInput img{
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <blockquote>
+  "The only limit to our realization of tomorrow is our doubts of today."
+</blockquote>
+
+  <div class="inputBox">
+    <div class="inputWrapper collapsed">
+      <div class="userInput" contenteditable="true" role="textbox" aria-multiline="true" placeholder="Type here..."></div>
+    </div>
+    <button class="toggleButton">Expand</button>
+    <button class="submitButton">Submit</button>
+  </div>
+
+  <script>
+    const toggleButton = document.querySelector('.toggleButton');
+    const inputWrapper = document.querySelector('.inputWrapper');
+
+    toggleButton.addEventListener('click', () => {
+      const isExpanded = inputWrapper.classList.toggle('expanded');
+      inputWrapper.classList.toggle('collapsed', !isExpanded);
+      toggleButton.textContent = isExpanded ? 'Collapse' : 'Expand';
+    });
+  </script>
+</body>
+</html>

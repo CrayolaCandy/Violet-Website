@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Skin Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .skin-container {
+            margin-top: 20px;
+        }
+        img {
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Minecraft Skin Viewer (Fixed Version)</h2>
+    
+    <input type="text" id="username" placeholder="Enter Minecraft username">
+    <button onclick="fetchSkin()">Get Skin</button>
+
+    <div class="skin-container">
+        <h3>Skin:</h3>
+        <img id="skinImage" src="" alt="Minecraft Skin" width="128">
+    </div>
+
+
+    
+    <script>
+        async function fetchSkin() {
+            const username = document.getElementById("username").value;
+            if (!username) {
+                alert("Please enter a username!");
+                return;
+            }
+
+            try {
+                // Step 1: Get UUID from Mojang API
+                let uuidResponse = await fetch(`https://api.mojang.com/users/profiles/minecraft/${username}`);
+                if (!uuidResponse.ok) throw new Error("User not found");
+
+                let uuidData = await uuidResponse.json();
+                let uuid = uuidData.id;
+
+                // Step 2: Get skin from Crafatar (works even for migrated accounts)
+                let skinURL = `https://crafatar.com/skins/${uuid}`;
+
+                // Display skin image
+                document.getElementById("skinImage").src = skinURL;
+            } catch (error) {
+                alert("Error: " + error.message);
+                console.error(error);
+            }
+        }
+    </script>
+
+</body>
+</html>

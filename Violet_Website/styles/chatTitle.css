@@ -1,0 +1,79 @@
+
+.chatTitleBox{
+  margin-top: 150px;
+  justify-content: center;
+  
+  position: relative;
+}
+.createThread{
+  background-color: rgb(79, 47, 134);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+}
+.chatType{
+  background-color: rgb(100, 61, 168);
+  display: flex;
+  flex-direction: row;
+  flex: 1fr;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px 10px;
+  width: 500px;
+  padding-left: 0;
+  border-radius: 10px 10px 0 0;
+  
+}
+.reportBox, .conversationBox{
+  background-color: hsl(271, 76%, 53%);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.messageType{
+  font-size: 30px;
+}
+.chatTypeChosen{
+  background-color: rgb(100, 61, 168);
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 10px;
+  width: 490px;
+  align-items: center;
+}
+.chatTitleList{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+ 
+}
+.chatList{ 
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(100, 61, 168);
+  width: 510px;
+  border: solid white 1px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  
+}
+.chatHeader{
+  color: white;
+  list-style-type: none;
+  width: 420px;
+  
+}
+.chatBox{
+  border: solid white 1px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: hsl(271, 76%, 53%);
+}

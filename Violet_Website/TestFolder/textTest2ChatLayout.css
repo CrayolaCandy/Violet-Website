@@ -1,0 +1,23 @@
+.messageBox{
+  display: flex;
+  justify-content: center;
+  
+}
+.userInfo{
+  display: flex;
+  flex-direction: column;
+}
+.userImage{
+  width: 100px;
+  border-radius: 100%;
+}
+.userName{
+  display: flex;
+  justify-content: center;
+}
+.messageInfo{
+  background-color: blueviolet;
+}
+.sentMessage{
+  width: 600px;
+}

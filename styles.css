@@ -1,0 +1,23 @@
+.front-modes{
+  /*
+  padding-top: 200px;
+  */
+  
+}
+.modes{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 100px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 20px;
+}
+body{
+  background-image: url('images/Logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

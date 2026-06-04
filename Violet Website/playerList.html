@@ -1,0 +1,51 @@
+<!-- playerList.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles/playerList.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script/playerList.js"></script> <!-- This script will fetch and render data -->
+  </head>
+  <body>
+    <div class="header">
+      <div class = sections>
+        <div class = "left-section">
+            <div>
+              <a href="./home.html"><button class = "home">Home</button></a>
+            </div>
+            <div>
+              <a href="./GIF.html"><button class = "player">Player</button></a>
+            </div>
+            <div class = 'creator'>Creator</div>
+        </div>
+          <div class = "right-section">
+            <div class = "logout">
+              LogOut
+            </div>
+            <div>
+              <img src = "./images/Logo.jpg" class = "account-picture">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="option">
+        <div>
+          <div class="topic">Tier</div>
+          <div>
+            <p class="tier">Master</p>
+            <p class="tier">Intermediate</p>
+            <p class="tier">Noob</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid js-player-box">
+      <div class="player-box"></div> <!-- This is where player data will be rendered -->
+    </div>
+  </body>
+</html>

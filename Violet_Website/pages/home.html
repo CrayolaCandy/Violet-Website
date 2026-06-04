@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/middle.css">
+  <link rel="stylesheet" href="/bedwars.css">
+  <link rel="stylesheet" href="/errorMessage.css">
+  <body>
+    <div>
+      <div class = "errorBox orderBox">
+        <div class = "errorMessage orderMessage">
+
+        </div>
+      </div>
+      <div class = "header">
+        
+      </div>
+      <div class = "VioletLogo">
+        <div>
+          <img src="/Image_20250122125335-removebg-preview.png" class = "Logo">
+        </div>
+      
+        <div class = 'link-box'>
+          <div class = "discord-link">
+            <img src="/download.jpg" class = "discord">
+            <p class = "link">Discord Link</p>
+          </div>
+          <div class = 'minecraft-link'>
+            <div class = 'image'>
+              <img src="/download__1_-removebg-preview.png" class = "minecraft">
+            </div>
+            <p class = "link">Server Link</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class = "box">
+          <div class = "grid-title">
+            <span class = "form-title">Store</span>
+            <div class = "bedwar-choices">
+              <div>
+                <div class = "stat-title">Stat Boost</div>
+                <div class = "stat-choice">
+                  <div class = "mode-button">
+                    <button class = "modeChoice Solo" onclick = "clickedMode(`Solo`)" value = "Solo"><img src="/SoloIcon.png" class = "modeButton"></button>
+                    <button class = "modeChoice Duo" onclick = "clickedMode(`Duo`)" value = "Duo"><img src="/DuoIcon.png" class = "modeButton"></button>
+                    <button class = "modeChoice Trio" onclick = "clickedMode(`Trio`)" value = "Trio"><img src="/TrioIcon.png" class = "modeButton"></button>
+                    <button class = "modeChoice Quad" onclick = "clickedMode(`Quad`)" value = "Quad"><img src="/QuadIcon.png" class = "modeButton"></button>
+                  </div>
+                  <div>
+                    <div class = "choices">
+                      <div class = "choice-name">
+                        <p>Bed Destroy Amount</p>
+                        <p>Final Kill Amount</p>
+                        <p>Winstreak Amount</p>
+                        <p>Win Amount</p>
+                      </div>
+                      <div class = "amount-box">
+                      <p>
+                        <select name="Bedwars" id="bedDestroy" class = "amount">
+                          <option value="1-10">1-10</option>
+                          <option value="11-20">11-20</option>
+                          <option value="21-30">21-30</option>
+                          <option value="31-40">31-40</option>
+                          <option value="41-50">41-50</option>
+                          <option value="51-60">51-60</option>
+                          <option value="61-70">61-70</option>
+                          <option value="71-80">71-80</option>
+                          <option value="81-90">81-90</option>
+                        </select>
+                      </p>
+                      <p>
+                        <select name="Bedwars" id="finalKill" class = "amount">
+                          <option value="1-10">1-10</option>
+                          <option value="11-20">11-20</option>
+                          <option value="21-30">21-30</option>
+                          <option value="31-40">31-40</option>
+                          <option value="41-50">41-50</option>
+                          <option value="51-60">51-60</option>
+                          <option value="61-70">61-70</option>
+                          <option value="71-80">71-80</option>
+                          <option value="81-90">81-90</option>
+                        </select>
+                      </p>
+                      <p>
+                        <select name="Bedwars" id="winStreak" class = "amount">
+                          <option value="1-10">1-10</option>
+                          <option value="11-20">11-20</option>
+                          <option value="21-30">21-30</option>
+                          <option value="31-40">31-40</option>
+                          <option value="41-50">41-50</option>
+                          <option value="51-60">51-60</option>
+                          <option value="61-70">61-70</option>
+                          <option value="71-80">71-80</option>
+                          <option value="81-90">81-90</option>
+                        </select>
+                      </p>
+                      <p>
+                        <select name="Bedwars" id="wins" class = "amount">
+                          <option value="1-10">1-10</option>
+                          <option value="11-20">11-20</option>
+                          <option value="21-30">21-30</option>
+                          <option value="31-40">31-40</option>
+                          <option value="41-50">41-50</option>
+                          <option value="51-60">51-60</option>
+                          <option value="61-70">61-70</option>
+                          <option value="71-80">71-80</option>
+                          <option value="81-90">81-90</option>
+                        </select>
+                      </p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <button class = "confirm-button statButton">Confirm</button>
+                    </div>
+                    <span class = "statOrderResult"></span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class = two-table>
+              <div class = "small-table left">
+                <p>Coins and XP</p>
+                <div>
+                  <div>
+                    <button class = "XP xpCoin" onclick = "clickedCurrency(`XP`)" data-value = "XP"><img src="/XP.png" class = "modeButton"></button>
+                    <button class = "Coin xpCoin" onclick = "clickedCurrency(`Coin`)" data-value = "Coin"><img src="/Coin.png" class = "modeButton"></button>
+                  </div>
+                  <div class = >
+                    <span>
+                      <select name="" id="" class = "currency">
+                        <option value="1-50">1-50</option>
+                        <option value="51-100">51-100</option>
+                        <option value="101-150">101-150</option>
+                        <option value="151-200">151-200</option>
+                        <option value="201-250">201-250</option>
+                        <option value="251-300">251-300</option>
+                        <option value="301-350">301-350</option>
+                        <option value="351-400">351-400</option>
+                        <option value="401-450">401-450</option>
+                        <option value="451-500">451-500</option>
+                      </select>
+                    </span>
+                    
+                  </div>
+                  <button class = "confirm-button currencyButton">Confirm</button>
+                </div>
+              </div>
+              <div class = "small-table right">
+                <p>Bounty</p>
+                <div class = "bounty-box">
+                  <div class = "player-search">
+                    <input type="text" class = "search-bar">
+                    <div>
+                      <span class = "targetAmount">Amount: </span>
+                      <select name="" class = "amount bountyAmount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                    
+                    <div class = "result">
+                      <span class = "searchResult"></span>
+                    </div>
+                    <div>
+                      <button class = "confirm-button bountyButton">Confirm</button>
+                    </div>
+                    
+                  </div>
+                  <div class = "skin">
+                    <img src="/Default.png" class = "searchSkin">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type = "module" src = "/orders/placeStatOrder.js"></script>
+    <script type = "module" src = "/orders/placeCurrencyOrder.js"></script>
+    <script type = "module" src = "/orders/placeBountyOrder.js"></script>
+    <script src = "/API/playerExist.js"></script>
+    <script src = "/buttonClicked.js"></script>
+    <script src = "/header.js"></script>
+
+    <script src = "/checkLog.js"></script>
+    <script src = "/logout.js"></script>
+  </body>
+</html>

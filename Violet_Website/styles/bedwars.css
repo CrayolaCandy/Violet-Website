@@ -1,0 +1,147 @@
+.box{
+  justify-items: center;
+
+}
+.grid-title{
+  text-align: center;
+  background-color:rgb(100, 61, 168);
+  padding-bottom: 50px;
+  width: 860px;
+}
+.form-title{
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 10px 10px 20px white;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bedwar-choices{
+  background-color: white;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+}
+.stat-title, .small-table{
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+.stat-choice{
+  display: flex;
+}
+.mode-button{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: none;
+  padding-left: 50px;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.modeChoice, .xpCoin{
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: white;
+  
+}
+.clicked, .xpCoinclicked{
+  box-shadow: inset 1px 1px 10px black;
+}
+.modeButton{
+  width: 100px;
+}
+.amount, .currency{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+}
+.choices{
+  margin-top: 50px;
+  display: flex;
+}
+.choice-name{
+  margin-left: 50px;
+}
+.amount-box{
+  margin-left: 20px;
+}
+.two-table, .bounty-box{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.small-table{
+  background-color: white;
+}
+.left{
+  margin-left: 50px;
+}
+.right{
+  margin-right: 50px;
+}
+.confirm-button, .currencyButton, .bountyButton{
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.currencyButton{
+  margin-bottom: 20px;
+}
+.search-bar{
+  width: 200px;
+}
+.searchSection{
+  padding-right: 5px;
+  padding-left: 10px;
+}
+.searchSkin{
+  height: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 10px 20px;
+}
+.search-bar{
+  width: 150px;
+  margin-left: 20px;
+}
+.searchResult{
+  font-size: 9px;
+}
+.result{
+  margin-top: 10px;
+  font-size: small;
+  font-weight: lighter;
+  width: 170px;
+  margin-left: 20px;
+  height: 100px;
+  margin-bottom: 0;
+  word-wrap: break-word; /* Ensures long words break */
+  overflow-wrap: break-word; /* Ensures wrapping */
+  white-space: normal; /* Allows text to wrap */
+
+}
+.bountyButton{
+  margin: 0;
+}
+.targetAmount{
+  font-size: 15px;
+  font-weight: lighter;
+}
+.notExist{
+  display: none;
+}

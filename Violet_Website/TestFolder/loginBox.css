@@ -1,0 +1,31 @@
+body {
+  height: 10000px;
+  background-color: aqua;
+}
+
+.logMessage {
+  position: fixed;
+  text-align: center;
+  
+}
+
+.logBox {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 43%;
+  right: 43%;
+  z-index: 10;
+  color: white;
+}
+.logLink{
+
+  color: white;
+}
+.logBox2 {
+  background-color: blueviolet;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  border-radius: 8px;
+}

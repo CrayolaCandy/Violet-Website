@@ -1,0 +1,49 @@
+<!-- playerList.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/playerList.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/window.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../script/playerList.js"></script> <!-- This script will fetch and render data -->
+  </head>
+  <body>
+    <div class = "page waiting">
+      <div style = " display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: rgb(100, 61, 168);">
+        <p style="position: absolute; font-size: 150px; border-style: solid; border-color: white; padding: 25px 50px; border-radius: 100px; background-color: blueviolet;">
+          Wait For It...
+        </p>
+        <img src="../images/animation/200-1--unscreen.gif" style="z-index: 100; margin-top: 100px;">
+      </div>
+    </div>
+    <div class = "window page2">
+      <div class="header">
+        
+      </div>
+
+      <div class="sidebar">
+        <div class="option">
+          <div>
+            <div class="topic">Tier</div>
+            <div>
+              <p class="tier">Master</p>
+              <p class="tier">Intermediate</p>
+              <p class="tier">Noob</p>
+            </div>
+          </div>
+        </div>
+        <div class = "shopping-cart">
+              <img src="../images/2D-Game-Art-A-Beautiful-Shopping-Cart-Icon-On-A-47705454-1-removebg-preview.png" class = "cart">
+              <div class = "cart-amount">2</div>
+        </div>
+      </div>
+
+      <div class="grid js-player-box">
+        <div class="player-box"></div> <!-- This is where player data will be rendered -->
+      </div>
+    </div>
+    <script src = "../script/header.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.testDiv{
+    display: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 1300px;
+    min-height: 100px;
+    white-space: pre-wrap;  /* important for wrapping & respecting line breaks */
+    word-wrap: break-word;  /* break long words if needed */
+    overflow-wrap: break-word;
+    outline: none;
+    font-size: 14px;
+}
+.messageSection{
+  width: 1300px;
+  height: 300px;
+}
+.textSection{
+  min-height: 200px;
+}
+.imageSection{
+  min-height: 100px;
+}
+
+
+.messageSection{
+  border: solid 1px red;
+}
+.textSection{
+  border: solid 1px green;
+}
+.imageSection{
+  border: solid 1px blue;
+}
